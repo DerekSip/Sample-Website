@@ -1,0 +1,64 @@
+<!--
+    Derek Siperko
+    6/30/2021
+    This program uses JavaScript and JQuery to do form validation
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <title>Document</title>
+    <script>
+        //JavaScript
+    </script>
+     <nav class="header">
+        <ul>
+            <li><a class="home" href="index.html">Home</a></li>
+            <li><a class="pagelink" href="About.html">About</a></li>
+            <li><a class="Contacts.html" href="Contacts.html">Contact</a></li>
+            </a></li>
+        </ul>
+    </nav>
+
+</head>
+<body>
+  
+    <p><h1>Sign up</h1></p>
+    <form id="basic-form" action="" method="post" onSubmit = "" >
+        <p>
+        <label for="name">Name <span>(required, at least 3 characters)</span></label>
+        <input id="name" name="name" minlength="3" type="text" required>
+        </p>
+        <p>
+        <label for="username">Create username<span>(required, at least 6 characters)</span></label>
+        <input id="username" name="username" minlength="6" type="text" required>
+        </p>
+        <p>
+        <label for="password1">Create password<span>(required, at least 10 characters)</span></label>
+        <input id="password1" name="password1"  minlength="10" type="text" required>
+        </p>
+        <p>
+        <label for="password2">Re-enter password<span>(required, at least 10 characters)</span></label>
+        <input id="password2" name="password2" minlength="10" type="text" required>
+        </p>
+        <p>
+        <label for="email">E-Mail <span>(required)</span></label>
+        <input id="email" type="email" name="email" required>
+        </p>
+        <p>
+        <label for="age">Your Age <span>(minimum 18)</span></label>
+        <input id="number" name="age" required>
+        </p>
+        <p>
+        <input class="submit" type="submit" value="Submit" >
+        </p>
+        </form>
+        
+</body>
+<script type="text/javascript" src="Source.js"></script>
+</html>
